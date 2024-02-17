@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Noto+Sans+Kawi&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    /*Padrão que se faz quando vai trabalhar com CSS que é fazer asterisco que é pra todos os itens da nossa CSS receber esta característica. A gente coloca o box-sizing como border-box que e para incorporar margens e pads tudo dentro de uma caixa só */
+}
+body{
+    margin: 0%;/*Colocamos tambem o body com margin igual a zero*/
+    font-family: 'Roboto'; sans-serif;
+}
+/* Portanto esse é o padrão de início de projeto de site usando logo no início o * e o body com margin igual a 0.*/
+
+.navbar{
+    /*´navbar é a barra de navegção do site*/
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    flex: 20%;
+    /* border: 2px solid red; */
+    text-align: left;
+    margin-left:10% ;
+}
+
+.logo h1{
+    font-family: 'Abril Fatface', serif;
+    color: rgb(34, 0, 255);
+    font-size: 34px;
+    
+}
+.menu{
+    flex: 70%;
+    /* border: 2px solid blue; */
+    text-align: right;
+    padding: 20px;
+}
+.menu a{
+    color: rgb(34, 0, 255);
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(11, 126, 11);
+    padding: 20px 25px;
+
+}
+.menu a:hover{
+    color: #FF2978;
+    border-top:4px solid rgb(194, 188, 16);
+}
+
+#botao{
+    background:rgb(47, 0, 255) ;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#botao:hover{
+    border: none;
+    background:  #FF2978;
+}
+
+.header{
+    display: flex;
+    flex-flow:row wrap ;
+    justify-content: center;
+    align-items: center;
+    /*height: 600px;*/
+    background: white;
+    padding-top: 100px; 
+    /*Usar as cores no site iguais ou exquivalente ás cores da figura. Como saber as cores de uma imagem. Tecla a função print scree, vai no google e coloca o print lá no programa, por exemplo,https://imagecolorpicker.com/en e lá consegue o código dos tons da cor printada */
+
+}
+
+.headline{
+    /* Linha de chamada onde consta o texto atrativo*/
+    margin-left: 10%;
+    flex: 40%;  /* Pegar 40% da nossa página */
+    /*border: 2px solid blue;*/
+}
+
+.contact-btn{
+    display: inline-block;
+    background: #FF2978;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.contact-btn:hover{
+    background: rgb(0, 4, 255);
+}
+
+.headline h2{
+    font-weight: 900px;
+    font-size:20px ;
+    color: blue;
+    padding:0px ;
+    margin:0px;
+}
+
+.headline p{
+    color: gray;
+    text-align:left ;
+
+}
+
+.img-headline{
+    margin-right: 10%;
+    flex: 40%; /* Pegar 40% da nossa página */
+    /*border: 2px solid rgb(255, 0, 166);*/
+    text-align: center;
+}
+section{
+    display: inline-block;
+    margin-top: 80px;
+    /*border: 2px solid blue;*/
+    margin-left: 5%;
+    margin-right: 5%;
+    /*height: 400px;Sem essa altura ele fica automático*/
+    padding: 5%;
+    text-align: center;
+    /*width: 90%;*/
+
+}
+section h2{
+    width: 100%;
+    font-size: 50px;
+    margin: 0px;
+    font-family: 'Abril Fatface', serif;
+    font-weight: bold;
+    color: blue;
+}
+
+.servicos{
+    display: inline-block;
+    margin-top: 5%;
+}
+.card{
+    display: inline-block;
+    width: 30%;
+    padding:20px ;
+    margin: 1%;
+    border: 2px solid red;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.texto-oculto{
+    display: none;
+}
+
+.card:hover{
+    background: #FF2978;
+    color: white;
+    padding: 40px;
+}
+
+.card:hover img{
+    display: none;
+}
+
+.card:hover .card-text{
+    display: none;
+}
+
+.card:hover .texto-oculto{
+    display: block;
+}
+
+footer{
+    margin-top: 100Px;
+    height: 280px;
+    background-image: linear-gradient(180deg,#008000,#85f485,black);
+    text-align:center ;
+    border-top: 5px solid #FF2978;
+}
+.logo-rodape{
+    padding: 80px;
+}
+
+.agencia{
+    font-family: 'Abril Fatface', serif;
+    color: rgb(34, 0, 255);
+    font-size: 34px;
+}
+
+.whats{
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    width: 85px;
+  
+
+}
